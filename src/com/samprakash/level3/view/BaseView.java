@@ -154,7 +154,7 @@ public class BaseView {
 		System.out.println(status);
 	}
 	public boolean getConfirmation() {
-		System.out.println("Are you willing to book cab\1) for book2)2 cancel");
+		System.out.println("Are you willing to book cab\n1) for book2)2 cancel");
 		boolean result = scanner.nextInt() == 1 ? true : false;
 		scanner.nextLine();
 		return result;

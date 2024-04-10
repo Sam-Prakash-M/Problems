@@ -180,7 +180,7 @@ public class BaseViewModel {
 		Set<Integer> keys = Repository.cabs.keySet();
 		for(int key : keys) {
 			Cab currCab = Repository.cabs.get(key);
-			if(currCab.getPotition().equals(nearestCab)) {
+			if(currCab.isAvailable() && currCab.getPotition().equals(nearestCab)) {
 				currCab.setAvailable(false);
 			}
 			else {
